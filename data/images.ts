@@ -102,8 +102,3 @@ export const images: Image[] = [
     description: "stars",
   },
 ];
-
-// TODO:
-// 2. Filter out photos
-// 3. Add dates
-// 4. Nav bar

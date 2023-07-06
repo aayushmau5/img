@@ -50,9 +50,9 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <Head>
-        <title>Photography | aayushsahu.com</title>
+        <title>Photographs | aayushsahu.com</title>
       </Head>
-      <h1 className="mt-4 mb-6 text-3xl text-center">Photography</h1>
+      <h1 className="mt-4 mb-6 text-3xl text-center">Photographs</h1>
       <ul className="flex flex-wrap gap-4 justify-center">
         {images.map((imageInfo, index) => (
           <li key={index} className="relative w-[400px] break-words">
@@ -80,7 +80,15 @@ export default function Home() {
         <ImageZoom onClose={closeImageZoom} imageData={zoomedImage} />
       ) : null}
       <footer className="text-center text-2xl mt-10 mb-5">
-        CC | aayushsahu.com
+        CC |{" "}
+        <a
+          className="opacity-40 hover:opacity-70"
+          href="https://aayushsahu.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          aayushsahu.com
+        </a>
       </footer>
     </div>
   );
